@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "phosphor-ai"
+version = "1.0.0"
+description = "Phosphor —— 世界顶级 AI 数学与算法内核：数值稳定原语 / 线性代数 / 自动微分 / 神经网络 / 注意力 / 经典机器学习，每条算法带不变量自检。"
+authors = [{ name = "晨星 (Morning Star)", email = "morningstar@cjx0712.dev" }]
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["ai", "machine-learning", "deep-learning", "autodiff", "attention", "pca", "gmm", "numerical"]
+dependencies = ["numpy>=1.24"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+]
+
+[project.urls]
+Homepage = "https://github.com/CJX0712/phosphor-ai"
+Repository = "https://github.com/CJX0712/phosphor-ai"
+
+[tool.setuptools.packages.find]
+include = ["phosphor*"]
